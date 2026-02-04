@@ -2,10 +2,9 @@
  Theme Name:   Free Fire Topup Child Theme
  Description:  Custom WooCommerce Child Theme for FF Topup
  Author:       Your Name
- Template:     Template: astra  <-- এটি আপনার মেইন থিমের ফোল্ডার নামের সাথে মিলিয়ে পরিবর্তন করুন
+ Template:     Template: astra
  Version:      1.0.0
 */
 
-/* নিচের ডিজাইন কোডগুলো যা ছিল তাই থাকবে */
 .player-id-field { margin: 20px 0; }
 .player-id-field input { width: 100%; border: 2px solid #ff4500; padding: 10px; }
