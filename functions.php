@@ -35,3 +35,20 @@ function add_player_id_to_order_items($item, $cart_item_key, $values, $order) {
         $item->add_meta_data('Player ID', $values['player_id']);
     }
 }
+<?php
+// ১. প্যারেন্ট থিমের স্টাইল লোড করা
+add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
+function enqueue_parent_styles() {
+   wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+}
+
+// ২. ডায়মন্ড টপ-আপের জন্য Player ID ফিল্ড যোগ করা (নিচে আপনার আগের কোডগুলো দিন)
+add_action('woocommerce_before_add_to_cart_button', 'add_player_id_field', 10);
+function add_player_id_field() {
+    echo '<div class="player-id-field">
+            <label for="player_id">Free Fire Player ID: </label>
+            <input type="text" id="player_id" name="player_id" placeholder="Ex: 12345678" required>
+          </div>';
+}
+
+// কার্টে ডাটা সেভ এবং অর্ডারে দেখানোর বাকি কোডগুলো এখানে যুক্ত করুন...
