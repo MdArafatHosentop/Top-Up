@@ -13,3 +13,23 @@
     border: 2px solid #ff4500; /* গেম ভাইব দেওয়ার জন্য কমলা রঙ */
     border-radius: 5px;
 }
+/*
+ Theme Name:   Free Fire Topup Child Theme
+ Theme URI:    https://yourwebsite.com/
+ Description:  A child theme for Free Fire Diamond Topup
+ Author:       Your Name
+ Template:     hello-elementor  /* এখানে আপনার মূল থিমের ফোল্ডারের নাম দিতে হবে (যেমন: storefront বা hello-elementor) */
+ Version:      1.0.0
+*/
+
+/* কাস্টম ডিজাইন এখানে যুক্ত করুন */
+.player-id-field {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.player-id-field input {
+    border: 2px solid #ff4500;
+    padding: 8px;
+    width: 100%;
+    border-radius: 4px;
+}
